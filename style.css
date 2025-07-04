@@ -402,6 +402,10 @@ footer {
         width: 90%;
     }
 
+    .contact-section form {
+        margin: 0 20px;
+    }
+
 
     /* FOOTER */
     .footer {
