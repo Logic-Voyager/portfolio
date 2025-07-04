@@ -111,7 +111,7 @@ main hr {
 .secondSection {
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
+    height: 60vh;
     margin-bottom: 20px;
 }
 
@@ -167,7 +167,7 @@ main hr {
 }
 
 .projects-section h1 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: left;
     font-size: 1.9rem; 
 }
