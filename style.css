@@ -158,43 +158,20 @@ main hr {
     width: 150px;
 }
 
-footer {
-    background-color: #0e0e1a;
-}
-
-.footer {
-    display: flex;
-    padding: 23px 123px;
-    justify-content: space-evenly;
-}
-
-.footer ul {
-    list-style: none;
-}
-
-.footer>div {
-    width: 246px;
-}
-
-.footer-rights {
-    text-align: center;
-    font-size: 13px;
-    color: gray;
-    padding: 12px;
-}
-
-/* contact and proje ct */
+/* project & contact */
 
 .projects-section {
-    max-width: 1000px;
+    max-width: 80vw;
     margin: 40px auto;
-    padding: 30px 20px;
     text-align: center;
 }
 
-.projects-section h2 {
+.projects-section h1 {
     margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.9rem; 
 }
+
 
 .projects-grid {
     display: grid;
@@ -215,18 +192,21 @@ footer {
 }
 
 .contact-section {
-    padding: 50px;
-    max-width: 600px;
-    margin: auto;
+    max-width: 80vw;
+    margin: 40px auto;
     text-align: center;
 }
 
-.contact-section h2 {
+.contact-section h1 {
     margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.9rem; 
 }
+
 
 .contact-section form {
     display: flex;
+    margin: 0 100px;
     flex-direction: column;
     gap: 10px;
 }
@@ -253,6 +233,45 @@ footer {
 .contact-section button:hover {
     background-color: rgb(66 66 175);
 }
+
+.contact-details {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+.contact-details p {
+    margin: 6px 0;
+}
+
+/* footer */
+footer {
+    background-color: #0e0e1a;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 123px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 246px;
+}
+
+.footer-rights {
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+    padding: 12px;
+}
+
+
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
@@ -368,10 +387,6 @@ footer {
     }
 
     /* CONTACT & PROJECTS */
-    .contact-section {
-        padding: 20px 0 60px 0;
-        width: 90%;
-    }
 
     .projects-section {
         width: 90%;
@@ -380,6 +395,11 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 20px 0 60px 0;
+        width: 90%;
     }
 
 
