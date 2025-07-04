@@ -8,7 +8,7 @@
 <body>
 
   <h1> My Portfolio </h1>
-  <p><strong> My way to <em> introduce </em></strong> myself.</p>
+  <p><strong> My way to <em> introduce </em>myself.</strong></p>
 
   <h2>🛠️ Tech Stack</h2>
   <ul>
