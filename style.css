@@ -257,7 +257,6 @@ footer {
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
 
-    /* KEEP NAVBAR SAME AS DESKTOP */
     nav {
         flex-direction: row;
         flex-wrap: wrap;
@@ -331,12 +330,10 @@ footer {
         position: relative;
         padding-left: 30px;
         background: none;
-        /* removed white background */
     }
 
     .secondSection .vertical {
         background-color: rgba(255, 255, 255, 0.5);
-        /* light visible line */
         width: 2px;
         height: 93px;
         margin: 40px 0;
@@ -372,15 +369,31 @@ footer {
 
     /* FOOTER */
     .footer {
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 23px 32px;
+        flex-wrap: nowrap;
+        text-align: left;
     }
 
+    .footer h3 {
+    font-size: 14px;
+}
+
+.footer ul li {
+    font-size: 11px;
+}
+
+.footer-rights {
+    font-size: 11px;
+}
+
     .footer>div {
-        width: 100%;
+        width: 246px;
     }
+
 
     /* CONTACT & PROJECTS */
     .contact-section {
@@ -390,7 +403,7 @@ footer {
 
     .projects-section {
         width: 90%;
-        padding: 20px 10px;
+        padding: 0 10px;
     }
 
     .projects-grid {
