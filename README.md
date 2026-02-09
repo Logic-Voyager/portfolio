@@ -9,8 +9,6 @@
 
   <h1> My Portfolio </h1>
   <p><strong> My way to <em> introduce </em>myself.</strong></p>
-
-  <h2>📸 Demo & Links</h2>
   <ul>
     <li>🌐 <strong>Live Site:</strong> <a href="https://shrutipf.netlify.app" target="_blank">https://shrutipf.netlify.app</a></li>  (Hosted on NETLIFY)
     <li>💾 <strong>Source Code:</strong> <a href="https://github.com/Logic-Voyager/portfolio" target="_blank">https://github.com/Logic-Voyager/portfolio</a></li>
