@@ -20,16 +20,14 @@ body {
     -webkit-font-smoothing: antialiased; /* Makes fonts look crisper on Mac */
     background-color: var(--bg-color);
     color: white;
-    body { font-family: 'Inter', sans-serif; }
-    font-weight: 400; 
+    body { font-family: 'Inter', sans-serif; } 
     overflow-x: hidden; 
     line-height: 1.6;
 }
 
 p {
     opacity: 0.8; /* Slightly dimming body text makes headings stand out more */
-    font-family: var(--font-heading);
-    font-weight: 200;
+    font-weight: 400;
 }
 
 
@@ -40,21 +38,19 @@ h1, h2, h3, .left, .btn, .nav ul li a {
 /* h1, h2, h3, h4, h5 { 
     font-family: 'Syne', sans-serif; 
     text-transform: uppercase; 
-    letter-spacing: -1px;
-    letter-spacing: -0.02em; 
-    line-height: 1.2;} */
+    letter-spacing: -1px;letter-spacing: -0.02em; /line-height: 1.2;} */
 
 /* Hero Section Specific Font Styling */
 .hero-title {
     font-size: 3.5rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.1;
     margin: 10px 0;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     opacity: 0.9;
 }
 
@@ -63,7 +59,7 @@ h1, h2, h3, .left, .btn, .nav ul li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--accent-purple);
 }
 
@@ -78,7 +74,7 @@ h1, h2, h3, .left, .btn, .nav ul li a {
     font-family: var(--font-heading);
     color: var(--accent-purple);
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -133,7 +129,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     transition: var(--transition);
 }
 
@@ -143,7 +139,7 @@ nav ul li a:hover {
 
 .left {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* --- HERO / ABOUT SECTION --- */
@@ -320,49 +316,74 @@ nav ul li a:hover {
     }
 }
 
-/* --- PROJECTS SECTION --- */
+/* --- PROJECTS SECTION REFINEMENT --- */
 .projects-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 40px 40px;
 }
 
 .projects-container {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: column; /* Stacks the cards vertically */
+    gap: 60px; /* Space between rows */
     margin-top: 40px;
 }
 
 .project-card {
     background: var(--card-bg);
     display: flex;
-    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: var(--transition);
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
 .project-content {
-    flex: 1.4;
+    flex: 1;
     padding: 50px;
 }
 
 .project-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project-content p {
+    font-size: 1rem;
+    color: var(--text-dim);
+    margin-bottom: 25px;
+    line-height: 1.6;
 }
 
 .project-link {
     display: inline-block;
-    margin-top: 25px;
     color: var(--accent-purple);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: var(--font-heading);
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    letter-spacing: 1px;
+    color: white;
 }
 
 .project-image {
     flex: 1;
+    height: 100%;
+    overflow: hidden;
 }
 
 .project-image img {
@@ -370,8 +391,28 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
 }
 
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* --- RESPONSIVE FIXES --- */
+@media (max-width: 900px) {
+    .project-card {
+        flex-direction: column; /* Stacks image on top of text on tablets/phones */
+    }
+    .project-content {
+        padding: 30px;
+        order: 2; /* Text goes below image */
+    }
+    .project-image {
+        width: 100%;
+        height: 250px;
+        order: 1; /* Image goes on top */
+    }
+}
 /* --- CONTACT SECTION --- */
 .contact-section {
     max-width: 1200px;
