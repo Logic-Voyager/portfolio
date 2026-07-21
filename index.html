@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Sharma | Portfolio Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shruti Sharma</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="about">
+            <div class="leftSection">
+                <span class="greet">System Status: Active</span>
+                <h1 class="hero-title">I'm <span class="text-purple">Shruti Sharma</span></h1>
+                <div class="hero-subtitle">A passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <button class="btn">Download CV</button>
+                    <button class="btn github">GitHub Profile</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div class="image-box">
+                    <img src="assests/bg.jpg" alt="Shruti Sharma Profile">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- <section class="stats-bar">
+          </div>
+            <div class="stat-item">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Tech Stack</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">24/7</span>
+                <span class="stat-label">Creative Mind</span>
+            </div>
+        </section>            <div class="stat-item">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Years Learning</span>
+   -->
+
+    <div class="separator"></div>
+
+    <section class="skills-section" id="skills">
+        <span class="text-gray">Core Capabilities</span>
+        <h1>Technical Arsenal</h1>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="assests/icons8-html-50.png" alt="HTML5">
+                </div>
+                <div class="skill-info">
+                    <h3>HTML5</h3>
+                    <p>Semantic Structure</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="assests/css.png" alt="CSS3">
+                </div>
+                <div class="skill-info">
+                    <h3>CSS3</h3>
+                    <p>Modern Styling</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon white-bg">
+                    <img src="assests/flask.png" alt="Flask">
+                </div>
+                <div class="skill-info">
+                    <h3>Flask</h3>
+                    <p>Python Backend</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="assests/node.png" alt="Node.js">
+                </div>
+                <div class="skill-info">
+                    <h3>Node.js</h3>
+                    <p>Server Logic</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="assests/icons8-react-48.png" alt="React">
+                </div>
+                <div class="skill-info">
+                    <h3>React</h3>
+                    <p>Frontend Apps</p>
+                </div>
+            </div>
+
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="projects-section" id="projects">
+        <span class="text-gray">Portfolio</span>
+        <h1>Featured Work</h1>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Crime Management System</h3>
+                    <p>Secure database architecture for tracking records using Python/Flask and MySQL.</p>
+                    <a href="https://github.com/Logic-Voyager/CrimeRecord_DBMS" class="project-link">Source Code →</a>
+                </div>
+                <div class="project-image">
+                    <img src="assests/image.png" alt="Crime Management Project">
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Smart Environmental Monitor</h3>
+                    <p>Real-time air quality tracking using Arduino and Python data visualization.</p>
+                    <a href="#" class="project-link">Source Code →</a>
+                </div>
+                <div class="project-image">
+                    <img src="assests/WhatsApp Image 2026-04-20 at 14.36.59.jpeg" alt="Environmental Monitor Project">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-card">
+            <h1>Ready to Build?</h1>
+            <p>Send a message directly to my dashboard.</p>
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <textarea id="message" rows="4" placeholder="How can I help you?" required></textarea>
+                <button type="submit" class="btn">Push to System</button>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Shruti Sharma</h3>
+                <p>Web Developer & Designer creating modern digital solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Work</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Shruti Sharma Portfolio. All system rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'UI Designer', 'Video Editor'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

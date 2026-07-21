@@ -1,0 +1,656 @@
+html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shruti Sharma</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="about">
+            <div class="leftSection">
+                Greetings!!
+                <div>I'm <span class="text-purple">Shruti Sharma</span></div>
+                <div>A passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="assests/bg.jpg" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray"> What I Have Done So Far</span>
+            <h1> Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="assests/icons8-html-50.png" alt="" width="30">
+                    <div class="vertical-title">
+                        HTML Developer | 2024-present
+                    </div>
+                    <div class="vertical-desc">
+                        Used in Personal Projects
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="assests/css.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer | 2024-present
+                    </div>
+                    <div class="vertical-desc">
+                        Used in Personal Projects
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="assests/node.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer | 2024-present
+                    </div>
+                    <div class="vertical-desc">
+                        Learning
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="assests/flask.png" alt="" style="background-color: white">
+                    <div class="vertical-title">
+                        Flask Developer | 2025-present
+                    </div>
+                    <div class="vertical-desc">
+                        Created Crime Record DBMS
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="assests/icons8-react-48.png" alt="">
+                    <div class="vertical-title">
+                        React Developer | 2025-present
+                    </div>
+                    <div class="vertical-desc">
+                        Learning and creating Projects
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="projects-section" id="projects">
+            <h1>My Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Crime Database Management System</h3>
+                    <p> Crime Records Tracking  website built with Flask and JavaScript</p>
+                </div>
+                <div class="project-card">
+                    <h3>Enigma</h3>
+                    <p>A Space-themed E-commerce Website </p>
+                </div>
+                <div class="project-card">
+                    <h3>LearnStack</h3>
+                    <p>Displays documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="contact-section" id="contact">
+            <h1>Contact Me</h1>
+
+            <div class="contact-details">
+                <p><strong>Email: </strong> shrutisharma.m31@gmail.com</p>
+                <p><strong>LinkedIn: </strong> shruti-sharma-m31 </p>
+                <p><strong>Instagram: </strong> shruti-sharma-m31 </p>
+            </div>
+
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3> Shruti's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; shrutiportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer</i>', 'Graphic Designer', 'Web Designer', '&amp; Video Editor'],
+            typeSpeed: 50,
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if (!name || !email || !message) {
+                alert("Please fill in all fields.");
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- 
+script.js
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+
+    menu.classList.toggle("open")
+    icon.classList.toggle("open")
+
+} -->
+
+css
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* DESKTOP NAV */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(19, 19, 72);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lavender;
+    font-size: 1.01rem;
+}
+
+.left {
+    font-size: 1.8rem;
+}
+
+main hr {
+    border: 0;
+    background: #8183b5;
+    height: 0.1px;
+    margin: 60px 84px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0;
+
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.leftSection .buttons {
+    padding: 46px 0;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background: linear-gradient(90deg, rgb(84 84 141) 18%, rgb(66 66 175));
+    color: white;
+    border: 2px solid rgb(61, 53, 53);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 115px;
+    margin-right: 28px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.rightSection img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.text-purple {
+    color: rgb(138, 96, 178);
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    color: rgb(138, 96, 178);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 60vh;
+    margin-bottom: 20px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 60px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background: white;
+    margin: 0 100px;
+}
+
+
+.image-top {
+    width: 35px;
+    position: relative;
+    top: -40px;
+    left: -16px;
+    height: 100pxs;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 15px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: gray;
+    font-size: 9px;
+    width: 150px;
+}
+
+/* project & contact */
+
+.projects-section {
+    max-width: 80vw;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.projects-section h1 {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 1.9rem; 
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: rgb(19, 19, 72);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-section {
+    max-width: 80vw;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-section h1 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.9rem; 
+}
+
+
+.contact-section form {
+    display: flex;
+    margin: 0 100px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-section button {
+    background-color: rgb(84 84 141);
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: rgb(66 66 175);
+}
+
+.contact-details {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+.contact-details p {
+    margin: 6px 0;
+}
+
+/* footer */
+footer {
+    background-color: #0e0e1a;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 123px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer>div {
+    width: 246px;
+}
+
+.footer-rights {
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+    padding: 12px;
+}
+
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    main hr {
+        margin: 20px 20px;
+    }
+
+    /* FIRST SECTION (INTRO) */
+    .firstSection {
+        flex-direction: column;
+        margin: 60px 20px;
+        text-align: center;
+    }
+
+    .firstSection>div {
+        width: 90%;
+    }
+
+    .leftSection {
+        font-size: 1.7rem;
+    }
+
+    .leftSection .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .leftSection .btn {
+        width: 80%;
+        margin: 0;
+    }
+
+    .rightSection img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* IMPROVED SECOND SECTION (Work Experience / Timeline) */
+    .secondSection {
+        max-width: 100vw;
+        height: auto;
+        margin: 40px auto;
+        padding: 0 30px;
+    }
+
+    .secondSection .box {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+        margin: 40px auto;
+        position: relative;
+        padding-left: 30px;
+        background: none;
+    }
+
+    .secondSection .vertical {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 2px;
+        height: 93px;
+        margin: 40px 0;
+        position: relative;
+        left: 20px;
+    }
+
+    .image-top {
+        position: absolute;
+        left: -42px;
+        top: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .vertical-title {
+        position: relative;
+        left: 40px;
+        top: -15px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .vertical-desc {
+        position: relative;
+        left: 40px;
+        top: -5px;
+        font-size: 12px;
+        color: gray;
+        width: calc(100% - 60px);
+        text-align: left;
+    }
+
+    /* CONTACT & PROJECTS */
+
+    .projects-section {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 20px 0 60px 0;
+        width: 90%;
+    }
+
+    .contact-section form {
+        margin: 0 20px;
+    }
+
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 23px 32px;
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+
+    .footer h3 {
+        font-size: 14px;
+    }
+
+    .footer ul li {
+        font-size: 11px;
+    }
+
+    .footer-rights {
+        font-size: 11px;
+    }
+
+    .footer>div {
+        width: 246px;
+    }
+}
